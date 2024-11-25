@@ -4,8 +4,8 @@ import logo from "D:/PROJECTS/MERN - STACK/Intern_Sample_Web/lyf-planning/src/as
 
 const sections = [
   { id: "Home",label: "Home" },
-  { id: "About",label: "About" },
   { id: "Plans",label: "Plans" },
+  { id: "About",label: "About" },
   { id: "Contact",label: "Contact" },
 ];
 
@@ -13,7 +13,7 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="flex justify-between items-center px-8 py-4 bg-gradient-to-r from-gray-50 to-gray-100 shadow-md sticky top-0 z-50">
+    <header className="flex justify-between items-center px-8 py-4 bg-gradient-to-r from-gray-50 to-gray-100 shadow-md fixed w-full z-50">
       {/* Logo Section */}
       <div
         className="flex items-center space-x-3 cursor-pointer"

@@ -8,7 +8,7 @@ const Home = () => (
     {/* Content Overlay */}
     <div className="relative z-10">
       {/* Main Heading */}
-      <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight">
+      <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight pt-3">
         Your Future, Planned <br />
         With Confidence and Care
       </h1>
