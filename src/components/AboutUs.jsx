@@ -1,5 +1,5 @@
 import React from "react";
-import aboutImage from "../assets/AboutUs/1.jpg"; // Adjust the file path as needed
+import aboutImage from "../assets/AboutUs/3.webp"; // Adjust the file path as needed
 
 const AboutUs = () => (
   <section
@@ -25,7 +25,7 @@ const AboutUs = () => (
           <img
             src={aboutImage}
             alt="About Future Focus"
-            className="rounded-lg shadow-lg w-full transform hover:scale-105 transition-transform duration-300"
+            className="rounded-lg shadow-lg w-full transform hover:scale-105 transition-transform duration-300 border border-blue-200"
           />
         </div>
 
@@ -39,13 +39,13 @@ const AboutUs = () => (
           </p>
           <div className="flex flex-col sm:flex-row sm:items-center sm:gap-4">
             <button
-              className="px-6 py-3 bg-gradient-to-r from-purple-600 to-blue-500 text-white font-medium rounded-lg shadow-lg hover:from-purple-700 hover:to-blue-600 hover:shadow-xl transition-all duration-300"
+              className="px-6 py-3 bg-gradient-to-r from-purple-600 to-blue-500 text-white font-medium rounded-lg shadow-lg hover:from-purple-700 hover:to-blue-600 hover:shadow-xl transition-all duration-300 transform hover:scale-105"
               onClick={() => document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" })}
             >
               Learn More
             </button>
             <button
-              className="px-6 py-3 bg-white border border-blue-500 text-blue-600 font-medium rounded-lg shadow-lg hover:bg-blue-100 hover:shadow-xl transition-all duration-300"
+              className="px-6 py-3 bg-white border border-blue-500 text-blue-600 font-medium rounded-lg shadow-lg hover:bg-blue-100 hover:shadow-xl transition-all duration-300 transform hover:scale-105"
               onClick={() => document.querySelector("#plans")?.scrollIntoView({ behavior: "smooth" })}
             >
               View Plans
