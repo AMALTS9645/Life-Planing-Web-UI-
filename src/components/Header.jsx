@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll"; // For smooth scrolling
-import logo from "D:/PROJECTS/MERN - STACK/Intern_Sample_Web/lyf-planning/src/assets/LogoS/LG1.png";
+import logo from "../assets/LogoS/LG1.png";
 
 const sections = [
   { id: "Home",label: "Home" },
