@@ -31,7 +31,7 @@ const FeaturedPlans = () => {
   ];
 
   return (
-    <section className="px-6 sm:px-12 lg:px-20 py-12 bg-gray-50">
+    <section id="plans" className="px-6 sm:px-12 lg:px-20 py-12 bg-gray-50">
       {/* Section Title */}
       <h2 className="text-4xl font-extrabold text-center mb-12 text-gray-800 tracking-tight">
         Featured Plans

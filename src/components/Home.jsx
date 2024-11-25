@@ -1,5 +1,5 @@
 const Home = () => (
-  <section className="relative text-center py-20 px-8 bg-gradient-to-br from-[#005f73] via-[#0a9396] to-[#94d2bd] text-white overflow-hidden">
+  <section id="home" className="relative text-center py-20 px-8 bg-gradient-to-br from-[#005f73] via-[#0a9396] to-[#94d2bd] text-white overflow-hidden">
     {/* Background Decorative Elements */}
     <div className="absolute inset-0 bg-gradient-to-br from-[#001219] via-[#005f73] to-[#0a9396] opacity-60"></div>
     <div className="absolute top-0 left-0 w-48 h-48 bg-gradient-to-br from-[#94d2bd] to-[#ee9b00] rounded-full blur-3xl opacity-40 animate-pulse"></div>

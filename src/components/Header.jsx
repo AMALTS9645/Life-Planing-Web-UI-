@@ -2,6 +2,13 @@ import React, { useState } from "react";
 import { Link } from "react-scroll"; // For smooth scrolling
 import logo from "D:/PROJECTS/MERN - STACK/Intern_Sample_Web/lyf-planning/src/assets/LogoS/LG1.png";
 
+const sections = [
+  { id: "Home",label: "Home" },
+  { id: "About",label: "About" },
+  { id: "Plans",label: "Plans" },
+  { id: "Contact",label: "Contact" },
+];
+
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -26,20 +33,15 @@ const Header = () => {
 
       {/* Desktop Navigation */}
       <nav className="hidden md:flex gap-6 text-lg font-medium">
-        {[
-          { label: "Home", target: "hero" },
-          { label: "Plans", target: "plans" },
-          { label: "About Us", target: "about" },
-          { label: "Contact Us", target: "contact" },
-        ].map((item, index) => (
+        {sections.map((section, index) => (
           <Link
             key={index}
-            to={item.target}
+            to={section.id.toLowerCase()}
             smooth={true}
             duration={500}
             className="cursor-pointer text-gray-800 hover:text-blue-600 transition duration-300"
           >
-            {item.label}
+            {section.label}
           </Link>
         ))}
       </nav>
@@ -61,21 +63,16 @@ const Header = () => {
             menuOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-5"
           }`}
         >
-          {[
-            { label: "Home", target: "hero" },
-            { label: "Plans", target: "plans" },
-            { label: "About Us", target: "about" },
-            { label: "Contact Us", target: "contact" },
-          ].map((item, index) => (
+          {sections.map((section, index) => (
             <Link
               key={index}
-              to={item.target}
+              to={section.id.toLowerCase()}
               smooth={true}
               duration={500}
               className="cursor-pointer text-gray-800 hover:text-blue-600 transition duration-300"
               onClick={() => setMenuOpen(false)} // Close menu after navigation
             >
-              {item.label}
+              {section.label}
             </Link>
           ))}
         </div>

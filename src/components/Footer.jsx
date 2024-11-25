@@ -2,7 +2,7 @@ import React from "react";
 import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
 
 const Footer = () => (
-  <footer className="bg-gradient-to-r from-gray-900 to-gray-800 text-gray-400 py-8">
+  <footer id="contact" className="bg-gradient-to-r from-gray-900 to-gray-800 text-gray-400 py-8">
     <div className="container mx-auto px-8 flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
       {/* Contact Us Section */}
       <div className="flex flex-col items-center md:items-start">
